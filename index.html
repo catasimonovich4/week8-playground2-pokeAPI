@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./styles.css">
     <title>PokéAPI</title>
 </head>
 <body>
     <header>
         <div class="header-container">
             <img src="./assets/pokeapi_256.png" alt="pokeApi">
-            <input type="text" name="search" id="search-pokemon" placeholder="Search a Pokemon by name or id...">
+            <input type="text" name="search" class="search-input" id="search-pokemon" placeholder="Search a Pokemon by name or id...">
         </div>
     </header>
     <section>
         <div id="cards-container" class="cards-container"></div>
     </section>
     <footer>
-        <div id="next-btn-container" class="next-btn-container"></div>
+        <div id="btns-container" class="btns-container">
+            <button id="previous-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
     </footer>
 </body>
-<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </html>
